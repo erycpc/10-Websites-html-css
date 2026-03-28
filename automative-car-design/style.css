@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+.container {
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1000px;
+    text-align: left;
+}
+
+header {
+    background-image: url('mercedes-amg-one-3840x2160-14238.jpg');
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 100px);
+}
+
+.content {
+    text-align: left;
+    font-size: 1rem;
+    margin: auto;
+    max-width: 100%;
+}
+
+.content h1 {
+    color: rgb(1, 213, 228);
+    margin-bottom: 0;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+nav .logo {
+    font-size: 2.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li a {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.selected {
+    font-weight: bold;
+}
+
+.highlight {
+    background-color: rgb(1, 213, 228);
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+}
+
+footer strong {
+    color: rgb(1, 213, 228);
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .content {
+        font-size: 1.4rem;
+        margin: 2rem auto;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li:not(:first-child) {
+        margin-bottom: 1rem;
+    }
+
+    nav .highlight {
+        display: none;
+    }
+
+    footer ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer li {
+        margin: 1rem;
+        text-align: center;
+    }
+    
+}
